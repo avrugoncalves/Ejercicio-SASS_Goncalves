@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Geologica:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/iconos/logo.png">
+    <title> PlayZone | Venta de Videojuegos Online </title>
+    <meta name="description" content="Compra los mejores videojuegos en línea. Gran variedad, precios competitivos y envío rápido. Encuentra tu próximo juego aquí.">
+    <meta name="keywords" content="Playstation, PS4, Videojuegos PlayStation, Tienda de videojuegos, PS4 juegos online, Juegos nuevos PS4, Ofertas PS4, Tienda de PS4, Juegos de Terror, Juegos RPG, Juegos de Aventura, Descuentos juegos de PS4, Multijugador, Ultimos Lanzamientos PS4">
+
+</head>
+<body>
+    <div class="background-svg">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+          <defs>
+            <linearGradient id="bg">
+              <stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+              <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+              <stop offset="100%" style="stop-color:rgba(118, 205, 255, 0.26)"></stop>
+            </linearGradient>
+            <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0 s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+          </defs>
+          <g>
+            <use xlink:href='#wave' opacity=".3">
+              <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="10s" calcMode="spline" values="270 230; -334 180; 270 230" keyTimes="0; .5; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+            </use>
+            <use xlink:href='#wave' opacity=".6">
+              <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="8s" calcMode="spline" values="-270 230;243 220;-270 230" keyTimes="0; .6; 1" keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+            </use>
+            <use xlink:href='#wave' opacity=".9">
+              <animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s" calcMode="spline" values="0 230;-140 200;0 230" keyTimes="0; .4; 1" keySplines="0.42, 0, 0.58, 1.0" repeatCount="indefinite" />
+            </use>
+          </g>
+        </svg>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <img class="cont-logo__menu" src="assets/iconos/logo.png" alt="">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                  <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Videojuegos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item " href="#masVendidos-link">Más Vendido</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item " href="#ofertas-link">Ofertas</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#terror-avrpg-link">Terror</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#terror-avrpg-link">Aventura y RPG</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Registrarse</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+        <section class="cont-section__main" id="masVendidos-link">
+            <h1>Nuestros Juegos Más Vendidos</h1>
+
+            <div class="container-fluid">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <article>
+                            <div class="carousel-item active">  
+                                <section class="cont-seccion__productos" id="cont-carrusel">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <article class="col-lg-3">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="assets/imagenes/topvendidos-gta.jpg" alt="Juego mas vendidos GTA 5">
+                                                    </div>
+                                                    <span class="title">GTA 5</span>
+                                                    <span class="price">USD$119.99</span>
+                                                </div>
+                                            </article>
+                                            <article class="col-lg-3">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="assets/imagenes/topvendidos-fortnite.jpg" alt="Juego mas vendidos FORTNITE">
+                                                    </div>
+                                                    <span class="title">Fortnite</span>
+                                                    <span class="price">USD$39.99</span>
+                                                </div>
+                                            </article>
+                                            <article class="col-lg-3">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="assets/imagenes/topvendidos-rocketleague.jpg" alt="Juego mas vendidos Rocket League">
+                                                    </div>
+                                                    <span class="title">Rocket League</span>
+                                                    <span class="price">USD$39.99</span>
+                                                </div>
+                                            </article>
+                                            <article class="col-lg-3">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="assets/imagenes/topvendidos-fifa23.jpg" alt="Juego mas vendidos FIFA23">
+                                                    </div>
+                                                    <span class="title">FIFA 23</span>
+                                                    <span class="price">USD$89.99</span>
+                                                </div>
+                                            </article>
+                                        </div>    
+                                    </div>
+                                </section>
+
+                            </div>
+                        </article>
+                        <article>
+                            <div class="carousel-item">
+                                <section class="cont-seccion__productos" id="cont-carrusel">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <article class="col-lg-3">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="assets/imagenes/topvendidos-f123.jpg" alt="Juego mas vendidos F1 23">
+                                                    </div>
+                                                    <span class="title">F1 2023</span>
+                                                    <span class="price">USD$99.99</span>
+                                                </div>
+                                            </article>
+                                            <article class="col-lg-3">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="assets/imagenes/topvendidos-mortalkombat11.jpg" alt="Juego mas vendidos MK 11">
+                                                    </div>
+                                                    <span class="title">Mortal Kombat 11</span>
+                                                    <span class="price">USD$119.99</span>
+                                                </div>
+                                            </article>
+                                            <article class="col-lg-3">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="assets/imagenes/topvendidos-spiderman.jpg" alt="Juego mas vendidos Spiderman">
+                                                    </div>
+                                                    <span class="title">Spiderman</span>
+                                                    <span class="price">USD$129.99</span>
+                                                </div>
+                                            </article>
+                                            <article class="col-lg-3">
+                                                <div class="card">
+                                                    <div class="image">
+                                                        <img src="assets/imagenes/topvendidos-sims4.jpg" alt="Juego mas vendidos Sims 4">
+                                                    </div>
+                                                    <span class="title">The Sims 4</span>
+                                                    <span class="price">USD$59.99</span>
+                                                </div>
+                                            </article>
+                                        </div>    
+                                    </div>
+                                </section>
+    
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+        
+        <section class="cont-acordeon__productos" id="ofertas-link">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button id="boton-acordeon" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Últimas Ofertas del Momento
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample" >
+                    <div class="accordion-body" id="fondo-acordeon">
+
+                        <section class="cont-seccion__productos bg-ofertas">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/oferta-tlou.jpg" alt="Juego en oferta TLOU">
+                                            </div>
+                                            <span class="title">The Last Of Us</span>
+                                            <span class="price">USD$80</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/oferta-cod.jpg" alt="Juego en oferta COD">
+                                            </div>
+                                            <span class="title">Call Of Duty</span>
+                                            <span class="price">USD$90</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/oferta-twd.png" alt="Juego en oferta TWD">
+                                            </div>
+                                            <span class="title">The Walking Dead</span>
+                                            <span class="price">USD$30</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/oferta-theforest.jpg" alt="Juego en oferta the forest">
+                                            </div>
+                                            <span class="title">The Forest</span>
+                                            <span class="price">USD$20</span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="row">
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/oferta-gow.png" alt="Juego en oferta GOW">
+                                            </div>
+                                            <span class="title">God of War</span>
+                                            <span class="price">USD$50</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/oferta-rdr2.png" alt="Juego en oferta Red Dead Redepmtion II">
+                                            </div>
+                                            <span class="title">Red Dead Redepmtion</span>
+                                            <span class="price">USD$60</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/oferta-nfs.jpg" alt="Juego en oferta Need For Speed">
+                                            </div>
+                                            <span class="title">Need For Speed</span>
+                                            <span class="price">USD$70</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/oferta-fnaf.jpg" alt="Juego en oferta FNAF">
+                                            </div>
+                                            <span class="title">FNAF: Security Breach</span>
+                                            <span class="price">USD$30</span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>  
+                    </div>
+                </div>
+                </div>
+            <div class="accordion-item" id="terror-avrpg-link">
+                <h2 class="accordion-header">
+                    <button id="boton-acordeon" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Juegos de Terror
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" >
+                    <div class="accordion-body" id="fondo-acordeon">
+                    
+                        <section class="cont-seccion__productos bg-terror">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/terror-7daystodie.jpeg" alt="Juego terror 7DTD">
+                                            </div>
+                                            <span class="title">7 Days To Die</span>
+                                            <span class="price">USD$49.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/terror-alan-wake.jpg" alt="Juego terror Alan Wake">
+                                            </div>
+                                            <span class="title">Alan Wake</span>
+                                            <span class="price">USD$29.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/terror-outlast.jpeg" alt="Juego terror Outlast">
+                                            </div>
+                                            <span class="title">Outlast</span>
+                                            <span class="price">USD$9.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/terror-residentevil.png" alt="Juego terror the Resident Evil">
+                                            </div>
+                                            <span class="title">Resident Evil</span>
+                                            <span class="price">USD$29.99</span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="row">
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/terror-subnautica.jpg" alt="Juego terror Subnautica">
+                                            </div>
+                                            <span class="title">Subnautica</span>
+                                            <span class="price">USD$29.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/terror-untildawn.jpg" alt="Juego terror Until Dawn">
+                                            </div>
+                                            <span class="title">Until Dawn</span>
+                                            <span class="price">USD$49.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/terror-dayz.jpg" alt="Juego terror Day Z">
+                                            </div>
+                                            <span class="title">Day Z</span>
+                                            <span class="price">USD$19.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/terror-poppyplaytime.jpg" alt="Juego terror Poppy Playtime">
+                                            </div>
+                                            <span class="title">Poppy Playtime C1</span>
+                                            <span class="price">USD$29.99</span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button id="boton-acordeon" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Juegos de Aventura y RPG
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="aventuraRPG-link">
+                    <div class="accordion-body" id="fondo-acordeon">
+                    
+                        <section class="cont-seccion__productos bg-aventuraRPG">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/aventura-minecraft.png" alt="Juego aventura MINECRAFT">
+                                            </div>
+                                            <span class="title">Minecraft</span>
+                                            <span class="price">USD$29.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/aventura-ark.jpg" alt="Juego aventura ark">
+                                            </div>
+                                            <span class="title">Ark Survival Survival Evolved</span>
+                                            <span class="price">USD$59.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/aventura-genshinimpact.jpg" alt="Juego aventura Genshin Impact">
+                                            </div>
+                                            <span class="title">Genshin Impact</span>
+                                            <span class="price">USD$29.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/aventura-skyrim.jpg" alt="Juego aventura Skyrim">
+                                            </div>
+                                            <span class="title">Skyrim</span>
+                                            <span class="price">USD$79.99</span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="row">
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/aventura-darksouls.png" alt="Juego aventura Dark Souls">
+                                            </div>
+                                            <span class="title">Dark Souls Deluxe Version</span>
+                                            <span class="price">USD$119.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/aventura-eldenring.png" alt="Juego aventura Elden Ring">
+                                            </div>
+                                            <span class="title">Elden Ring</span>
+                                            <span class="price">USD$60</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/aventura-diablo.jpg" alt="Juego aventura Diablo">
+                                            </div>
+                                            <span class="title">Diablo III</span>
+                                            <span class="price">USD$39.99</span>
+                                        </div>
+                                    </article>
+                                    <article class="col-lg-3">
+                                        <div class="card">
+                                            <div class="image">
+                                                <img src="assets/imagenes/aventura-horizon.jpg" alt="Juego aventura Horizon">
+                                            </div>
+                                            <span class="title">Horizon</span>
+                                            <span class="price">USD$49.99</span>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer">
+            <div class="footer-menu">
+                <div class="footer-section">
+                    <a href="index.html">Inicio</a>
+                </div>
+                <div class="footer-section">
+                    <a href="#">Sobre Nosotros</a>
+                    <ul>
+                        <li><a href="#">Quienes Somos</a></li>
+                        <li><a href="#">Que Hacemos</a></li>
+                        <li><a href="#">Sucursales</a></li>
+                        <li><a href="#">Envios</a></li>
+                        <li><a href="#">Garantias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <a href="#">Videojuegos</a>
+                    <ul>
+                        <li><a href="#">Más vendidos</a></li>
+                        <li><a href="#">De Oferta</a></li>
+                        <li><a href="#">Terror</a></li>
+                        <li><a href="#">Aventura y RPG</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <a href="#">Registro</a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-copyright">
+                &copy; 2024 Play Zone 
+            </div>
+        </footer>
+        
+</body>
+</html>

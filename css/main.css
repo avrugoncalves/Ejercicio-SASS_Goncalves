@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  body .background-svg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden; }
+    body .background-svg svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: #2285cc;
+      background-image: linear-gradient(to bottom, rgba(37, 134, 204, 0.86), #156096); }
+  body header, body main {
+    position: relative;
+    z-index: 1; }
+
+header {
+  background-image: url(../assets/imagenes/fondo-menu.png);
+  background-position: center;
+  width: 100%;
+  height: 700px; }
+  header .navbar .cont-logo__menu {
+    width: 4%;
+    height: 100%;
+    margin-right: 1%; }
+  header .navbar .nav-link {
+    color: #ffffff57;
+    transition: color 0.5s; }
+    header .navbar .nav-link:hover {
+      color: #ffffff; }
+  header .navbar .dropdown-menu {
+    background-color: #212529; }
+    header .navbar .dropdown-menu .dropdown-item {
+      background-color: #212529;
+      transition: background-color 0.5s ease;
+      color: #ffffff; }
+      header .navbar .dropdown-menu .dropdown-item:hover {
+        background-color: #ffffff57; }
+  header .navbar .btn-outline-success {
+    color: #ffffff57;
+    border-color: #ffffff57;
+    transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; }
+    header .navbar .btn-outline-success:hover {
+      color: #ffffff;
+      background-color: #ffffff57;
+      border-color: #ffffff57; }
+
+.cont-section__main {
+  margin-bottom: 4%; }
+  .cont-section__main h1 {
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600; }
+  .cont-section__main #cont-carrusel {
+    width: 83%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .cont-section__main .carousel-item {
+    transition: transform 1s ease-in-out; }
+
+.cont-seccion__productos {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: max-content; }
+
+.cont-acordeon__productos {
+  margin-bottom: 15%; }
+
+.accordion-item:first-child .accordion-button {
+  background-color: #2a01c0;
+  transition: background-color 0.5s ease; }
+  .accordion-item:first-child .accordion-button:hover {
+    background-color: #2a01c0;
+    transition: background-color 0.5s ease; }
+    .accordion-item:first-child .accordion-button:hover:not(.collapsed) {
+      transition: background-color 0.5s ease;
+      background-color: #2a01c0; }
+
+.accordion-button {
+  transition: background-color 0.5s ease; }
+  .accordion-button:hover {
+    transition: background-color 0.5s ease;
+    background-color: #2a01c0; }
+
+.accordion-collapse {
+  transition: height 0.5s ease, opacity 1s ease; }
+  .accordion-collapse .collapsing {
+    opacity: 0; }
+    .accordion-collapse .collapsing .show {
+      opacity: 1; }
+
+#boton-acordeon {
+  color: black;
+  font-weight: bolder;
+  transition: color 0.5s ease; }
+  #boton-acordeon:hover {
+    transition: color 0.5s ease;
+    color: #ffffff; }
+
+.bg-ofertas .card::after {
+  background-color: #3a0000; }
+
+.bg-terror .card::after {
+  background-color: #01004e; }
+
+.bg-aventuraRPG .card::after {
+  background-color: #004204; }
+
+.card {
+  margin-top: 10%;
+  position: relative;
+  width: 330px;
+  height: 400px;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+  margin-bottom: 7%;
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5em;
+  padding-bottom: 3.4em; }
+  .card .title {
+    font-size: 22px;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.875em;
+    font-weight: 600;
+    font-family: "Chakra Petch", sans-serif;
+    color: #320cb8; }
+  .card .price {
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000; }
+  .card .text {
+    max-width: 55px; }
+  .card .image {
+    background: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 15px; }
+  .card::after {
+    content: "Add to Cart";
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #2a01c0;
+    color: #fff;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 80ms; }
+  .card:hover::after {
+    bottom: 0;
+    opacity: 1; }
+  .card:active {
+    transform: scale(0.1); }
+
+.footer {
+  background-color: #203296;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center; }
+  .footer .footer-menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px; }
+  .footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .footer .footer-section a {
+    font-weight: 400;
+    font-size: 18px;
+    color: #cccccc81;
+    text-decoration: none;
+    transition: color 0.5s ease; }
+    .footer .footer-section a:hover {
+      color: #ffffff;
+      transition: color 0.5s ease; }
+  .footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .footer .footer-section ul li {
+      margin-bottom: 5px; }
+      .footer .footer-section ul li a {
+        font-size: 15px;
+        color: #cccccc71;
+        text-decoration: none; }
+        .footer .footer-section ul li a:hover {
+          color: #ffffffa4; }
+  .footer .footer-divider {
+    border-top: 1px solid #ffffff38;
+    margin: 20px 0; }
+  .footer .footer-copyright {
+    color: #cccccc;
+    font-size: 14px; }
