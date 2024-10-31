@@ -40,7 +40,7 @@ header {
     margin-right: 1%; }
   header .navbar .nav-link {
     color: #ffffff57;
-    transition: color 0.5s; }
+    transition: color 0.5s ease; }
     header .navbar .nav-link:hover {
       color: #ffffff; }
   header .navbar .dropdown-menu {
@@ -189,7 +189,10 @@ header {
     bottom: 0;
     opacity: 1; }
   .card:active {
-    transform: scale(0.1); }
+    transform: scale(0.98); }
+    .card:active::after {
+      content: "Added !";
+      height: 3.125em; }
 
 .footer {
   background-color: #203296;

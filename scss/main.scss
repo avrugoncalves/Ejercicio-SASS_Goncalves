@@ -199,7 +199,11 @@ $colorBotonSecciones: (
     opacity: 1;
   }
   &:active {
-    transform: scale(0.1);
+    transform: scale(0.98);
+    &::after{
+      content: "Added !";
+      height: 3.125em;
+    }
   }
 }
 
